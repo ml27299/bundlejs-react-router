@@ -2,7 +2,7 @@ import React from "react";
 
 import { Switch, Route as RouteServer } from "react-router-dom";
 
-import { fixRouteOrder } from "bundlejs/dist/utils";
+import { fixRouteOrder } from "@bundlejs/core/dist/utils";
 
 const App = ({ routes = [] }) => {
 	if (!Array.isArray(routes)) routes = [routes];

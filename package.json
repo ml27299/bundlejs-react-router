@@ -6,6 +6,7 @@
 		"npm": ">=6.9.0"
 	},
 	"main": "dist/index.js",
+	"repository": "git@github.com:ml27299/bundlejs-react-router.git",
 	"scripts": {
 		"clean": "rm -rf dist",
 		"link": "npm link bundlejs",
@@ -28,6 +29,7 @@
 		"react-router-dom": "^5.0.1"
 	},
 	"dependencies": {
+		"@bundlejs/core": "0.0.1",
 		"@loadable/component": "5.13.2",
 		"mobx-react": "^6.2.2",
 		"regenerator-runtime": "^0.13.9",
