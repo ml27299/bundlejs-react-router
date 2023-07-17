@@ -2,7 +2,7 @@ import ReactDOM from "react-dom";
 import React, { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import { getResources } from "bundlejs";
+import { getResources } from "@bundlejs/core";
 
 function Main({ routes, staticContext, App }) {
 	useEffect(() => {
