@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useState } from "react";
 import { useLocation, matchPath } from "react-router-dom";
 import { setStaticContext as setStaticContextLib } from "./libs/setStaticContext";
 import { validateStaticContext } from "./libs/validateStaticContext";
-import { renderServerError } from "./";
+import { renderServerError } from "./libs/renderServerError";
 import { searchToObject } from "@bundlejs/core/dist/utils";
 
 import { getResources } from "@bundlejs/core";
