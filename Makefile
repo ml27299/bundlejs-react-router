@@ -11,6 +11,7 @@ ifeq ($(message),)
 else
 	git commit -am "$(message)" --allow-empty
 endif
+	git pull origin $(CURRENT_GIT_BRANCH)
 ifneq ($(CURRENT_GIT_BRANCH),$(branch))
 ifeq ($(shell git show-ref refs/heads/$(branch) | wc -l | sed -e 's/^[[:space:]]*//'),0)
 	git checkout -b $(branch)
