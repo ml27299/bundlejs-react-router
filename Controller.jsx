@@ -49,7 +49,6 @@ const Controller = ({
 			res.setStaticContext = setStaticContextLib(route)(req, res);
 
 			const next = () => () => {
-				console.log("req.staticContext", req.staticContext);
 				onStaticContextChange(req.staticContext, route);
 				setStaticContext(req.staticContext);
 			};

@@ -37,8 +37,6 @@ export const hydrate = async function (routes, currentRoute, App) {
 		throw err;
 	}
 
-	console.log({ configuredRoutes });
-
 	const appStateElem = document.querySelector("#app-page-state");
 	const staticContext = JSON.parse(appStateElem.innerHTML || "{}") || {};
 
