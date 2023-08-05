@@ -2,8 +2,8 @@ name: Deploying @bundlejs/react-router npm package
 on:
   push:
     branches:
-      - master
-concurrency: master
+      - patch
+concurrency: patch
 jobs:
   deploy:
     name: deploy
