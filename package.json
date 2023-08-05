@@ -54,7 +54,6 @@
 		"babel-plugin-module-resolver": "^4.0.0",
 		"babel-plugin-source-map-support": "^2.1.2",
 		"babel-preset-react-app": "^7.0.2",
-		"np": "^8.0.4",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-router": "^5.0.1",
