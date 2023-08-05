@@ -1,6 +1,6 @@
 {
 	"name": "@bundlejs/react-router",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"engines": {
 		"node": ">=10.15.0",
 		"npm": ">=6.9.0"
@@ -12,7 +12,7 @@
 		"link": "npm link bundlejs",
 		"build": "npm run link && npm run clean && NODE_ENV=development webpack --progress",
 		"build:prod": "NODE_ENV=production webpack",
-		"release:patch": "np patch --no-2fa --branch master --no-publish --no-release-draft",
+		"release:patch": "np patch --any-branch --no-2fa --branch master --no-publish --no-release-draft",
 		"release:minor": "np minor --no-2fa --branch master --no-publish --no-release-draft",
 		"release:major": "np major --no-2fa --branch master --no-publish --no-release-draft"
 	},
@@ -40,10 +40,6 @@
 		"source-map-support": "^0.5.19"
 	},
 	"devDependencies": {
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"react-router": "^5.0.1",
-		"react-router-dom": "^5.0.1",
 		"@babel/core": "7.2.2",
 		"@babel/plugin-proposal-class-properties": "^7.8.3",
 		"@babel/plugin-proposal-decorators": "^7.8.3",
@@ -58,6 +54,10 @@
 		"babel-plugin-module-resolver": "^4.0.0",
 		"babel-plugin-source-map-support": "^2.1.2",
 		"babel-preset-react-app": "^7.0.2",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-router": "^5.0.1",
+		"react-router-dom": "^5.0.1",
 		"webpack": "^4.46.0",
 		"webpack-cli": "^4.8.0",
 		"webpack-node-externals": "^3.0.0"
