@@ -32,3 +32,11 @@ jobs:
           npm publish --access public --verbose
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Merge patch -> master
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          target_branch: master
+          message: Merge patch into master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
