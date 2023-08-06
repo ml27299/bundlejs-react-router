@@ -13,8 +13,8 @@
 		"build": "npm run link && npm run clean && NODE_ENV=development webpack --progress",
 		"build:prod": "NODE_ENV=production webpack",
 		"release:patch": "np patch --any-branch --no-2fa --branch master --no-publish --no-release-draft",
-		"release:minor": "np minor --no-2fa --branch master --no-publish --no-release-draft",
-		"release:major": "np major --no-2fa --branch master --no-publish --no-release-draft"
+		"release:minor": "np minor --no-2fa --any-branch --branch master --no-publish --no-release-draft",
+		"release:major": "np major --no-2fa --any-branch --branch master --no-publish --no-release-draft"
 	},
 	"browserslist": [
 		">0.2%",
