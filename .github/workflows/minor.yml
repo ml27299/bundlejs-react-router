@@ -20,7 +20,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: "https://registry.npmjs.org"
 
-      - run: npm i -g np
+      - run: npm i -g np@7.6.1
       - run: npm ci
       - run: npm run build:prod
 
@@ -32,3 +32,12 @@ jobs:
           npm publish --access public --verbose
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Merge minor -> master
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: minor
+          target_branch: master
+          message: Merge minor into master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
